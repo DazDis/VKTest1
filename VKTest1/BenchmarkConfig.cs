@@ -13,6 +13,7 @@
         public bool FrameGen { get; set; } = false;
         public bool RayTracing { get; set; } = false;
         public int QualityLevel { get; set; } = 0; 
+        public int MotionBlur { get; set; } = 0;
         public double ResolutionQuality { get; set; } = 50.0;
 
         public static BenchmarkConfig CreateCpuDefault() => new()
@@ -21,8 +22,10 @@
             Type = BenchmarkType.CPU,
             Width = 1280,
             Height = 720,
+            ScreenMode = 2,
             QualityLevel = 0,
-            ResolutionQuality = 50.0,
+            ResolutionQuality = 1.0,
+            MotionBlur = 0,
             Dlss = false,
             FrameGen = false,
             RayTracing = false
@@ -34,8 +37,10 @@
             Type = BenchmarkType.GPU,
             Width = 1920,
             Height = 1080,
-            QualityLevel = 3,
+            ScreenMode = 1,
+            QualityLevel = 4,
             ResolutionQuality = 100.0,
+            MotionBlur = 2,
             Dlss = false,
             FrameGen = false,
             RayTracing = true

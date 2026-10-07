@@ -191,6 +191,7 @@ namespace VKTest1
                 ["Vsync"] = p.VSync ? "1" : "0",
                 ["Dlss"] = p.Dlss ? "1" : "0",
                 ["Dx12"] = "1",
+                ["MotionBlur"] = p.MotionBlur.ToString(),
                 ["InsertFrame"] = p.FrameGen ? "1" : "0",
                 ["Rtx"] = p.RayTracing ? "1" : "0",
                 ["RtxLevel"] = p.RayTracing ? "3" : "0",

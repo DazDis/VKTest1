@@ -69,6 +69,7 @@ namespace VKTest1
                             Close();
                             return;
                         }
+                        await Task.Delay(30000, _cts.Token);
                     }
                     catch (Exception ex)
                     {
