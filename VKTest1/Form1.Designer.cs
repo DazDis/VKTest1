@@ -35,7 +35,6 @@
             rtbTest2 = new RichTextBox();
             rtbSystem = new RichTextBox();
             label3 = new Label();
-            lblStatus = new Label();
             SuspendLayout();
             // 
             // label1
@@ -107,16 +106,6 @@
             label3.TabIndex = 4;
             label3.Text = "Информация о системе";
             // 
-            // lblStatus
-            // 
-            lblStatus.AutoSize = true;
-            lblStatus.Font = new Font("Segoe UI", 24F);
-            lblStatus.Location = new Point(415, 9);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(105, 45);
-            lblStatus.TabIndex = 6;
-            lblStatus.Text = "label4";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -124,7 +113,6 @@
             BackColor = Color.FromArgb(255, 224, 192);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(901, 513);
-            Controls.Add(lblStatus);
             Controls.Add(rtbSystem);
             Controls.Add(label3);
             Controls.Add(rtbTest2);
@@ -149,7 +137,6 @@
         private System.Windows.Forms.RichTextBox rtbTest2;
         private System.Windows.Forms.RichTextBox rtbSystem;
         private System.Windows.Forms.Label label3;
-        private Label lblStatus;
     }
 }
 
